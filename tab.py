@@ -4,7 +4,6 @@ this is a test
 """
 #python Tab
 import sys
-
 import rlcompleter
 import atexit
 import os
@@ -20,6 +19,7 @@ histfile = os.path.join(os.environ['HOMEPATH'], '.pythonhistory')
 # histfile = os.path.join(os.environ['HOME'], '.pythonhistory')
 try:
     readline.read_history_file(histfile)
+    print "ok"
 except IOError:
     pass
 atexit.register(readline.write_history_file, histfile)
