@@ -11,7 +11,7 @@ try:
   import readline
 except ImportError:
   import pyreadline as readline
-
+  print "very fuck"
 readline.parse_and_bind('tab: complete')
 # windows
 histfile = os.path.join(os.environ['HOMEPATH'], '.pythonhistory')
